@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="index.css"> <!-- Все стили здесь -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+            <div class="input-group">
+                <input type="text" id="regUsername" name="regUsername" placeholder="Имя пользователя">
+                <i class="fas fa-user"></i>
+                <div class="error" id="regUsernameError"></div>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="regPassword" name="regPassword" placeholder="Пароль">
+                <i class="fas fa-lock"></i>
+                <div class="error" id="regPasswordError"></div>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="regConfirmPassword" name="regConfirmPassword" placeholder="Подтвердите пароль">
+                <i class="fas fa-lock"></i>
+                <div class="error" id="regConfirmPasswordError"></div>
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+         <div class="remember-forgot">
+                <label><input type="checkbox">Запомнить меня</label>
+            </div>
+        <p>Уже есть аккаунт? <a href="login.html" id="showLoginFormButton">Войти</a></p>
+
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
